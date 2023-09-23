@@ -1,14 +1,14 @@
-package com.fadesp.api.pagamento;
+package com.fadesp.api.domain.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record DadosAtualizacaoPagamento(
+public record AtualizacaoPagamentoDTO(
     @NotNull
-    int paymentCode,
+    int codigoPagamento,
     
     @NotBlank
-    String new_status
+    String novoStatus
     
     ) {
 

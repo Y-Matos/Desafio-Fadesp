@@ -1,1 +1,1 @@
-alter table pagamentos add status varchar(20) not null;
+alter table pagamentos add status varchar(30) not null;

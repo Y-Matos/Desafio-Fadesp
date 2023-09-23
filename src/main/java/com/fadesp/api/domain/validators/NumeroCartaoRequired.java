@@ -1,4 +1,4 @@
-package com.fadesp.api.validators;
+package com.fadesp.api.domain.validators;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,10 +10,10 @@ import jakarta.validation.Payload;
 
 // Cria a Constraint para ser usada na classe de pagamento
 
-@Constraint(validatedBy = CardNumberRequiredValidator.class)
+@Constraint(validatedBy = NumeroCartaoRequiredValidator.class)
 @Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CardNumberRequired  {
+public @interface NumeroCartaoRequired  {
 
     String message() default "O número do cartão é obrigatório para pagamento com cartão de crédito.";
     Class<?>[] groups() default {};
